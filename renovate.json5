@@ -1,15 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>halkeye/halkeye//.github/renovate/base.json5",
-  ]
+    "github>halkeye/halkeye//.github/renovate/base.json5"
+  ],
   "customManagers": [
     {
       "customType": "regex",
       "fileMatch": ["^.github/workflows/build.yml$"],
       "matchStrings": ["GATHIO_VERSION: (?<currentValue>.*?)\\n"],
       "depNameTemplate": "lowercasename/gathio",
-      "datasourceTemplate": "github-releases",
+      "datasourceTemplate": "github-releases"
     }
   ]
 }
