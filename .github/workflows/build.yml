@@ -16,6 +16,7 @@ jobs:
     with:
       upstream_version: "v1.4.1"
       upstream_repo: "https://github.com/lowercasename/gathio"
+      checkout_upstream_repo: "true"
       run_number: "${{ github.run_number }}"
       username: "${{ github.repository_owner }}"
       repository: "${{ github.repository }}"
