@@ -6,8 +6,8 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["^.github/workflows/build.yml$"],
-      "matchStrings": ["GATHIO_VERSION: (?<currentValue>.*?)\\n"],
+      "fileMatch": ["^.github/workflows/build.yml$", "^Dockerfile$"],
+      "matchStrings": ["upstream_version: \"v(?<currentValue>.*?)\"\\n", "ARG GATHIO_VERSION=(?<currentValue>.*?)\\n"],
       "depNameTemplate": "lowercasename/gathio",
       "datasourceTemplate": "github-releases"
     }
