@@ -14,9 +14,9 @@ jobs:
       contents: write
       packages: write
     with:
-      upstream_version: "v1.5.1"
-      upstream_repo: "https://github.com/lowercasename/gathio"
-      checkout_upstream_repo: "lowercasename/gathio"
+      upstream_version: "allow-nodemailer-url"
+      upstream_repo: "https://github.com/halkeye/gathio"
+      checkout_upstream_repo: "halkeye/gathio"
       run_number: "${{ github.run_number }}"
       username: "${{ github.repository_owner }}"
       repository: "${{ github.repository }}"
