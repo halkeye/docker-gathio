@@ -14,7 +14,7 @@ jobs:
       contents: write
       packages: write
     with:
-      upstream_version: "allow-nodemailer-url"
+      upstream_version: "fix-nodemailer"
       upstream_repo: "https://github.com/halkeye/gathio"
       checkout_upstream_repo: "halkeye/gathio"
       run_number: "${{ github.run_number }}"
